@@ -48,8 +48,8 @@
 
     <!-- Uncomment this for maven public release deployment
     <build>
-        <plugins>
-            <plugin>
+        <plugins>            
+           <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
                 <version>2.2.1</version>
