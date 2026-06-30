@@ -46,9 +46,9 @@
         </license>
     </licenses>
 
-    <repositories>
+   <repositories>
         <repository>
-            <id>central</id>
+            <id>central-sonatype</id>
             <url>https://central.sonatype.com/repository/maven-snapshots/</url>
             <releases>
                 <enabled>false</enabled>
@@ -57,8 +57,12 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
+        <repository>
+             <id>maven-apache-maven2</id>
+             <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
     </repositories>
-
+         
     <distributionManagement>
         <snapshotRepository>
             <id>central</id>
