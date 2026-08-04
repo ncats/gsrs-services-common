@@ -58,10 +58,17 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
-    <repository>
-        <id>maven-apache-maven2</id>
-        <url>https://repo.maven.apache.org/maven2</url>
-    </repository>
+        <repository>
+             <id>maven-apache-maven2</id>
+             <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <repository>
+            <id>central-repo1-maven2</id>
+            <url>https://repo1.maven.org/maven2</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
     </repositories>
 
     <distributionManagement>
