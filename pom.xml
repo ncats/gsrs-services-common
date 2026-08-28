@@ -9,17 +9,18 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.18</version>
+        <version>4.1.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <properties>
-        <java.version>1.8</java.version>
-        <spring-boot.version>2.7.18</spring-boot.version>
-        <log4j2.version>2.17.2</log4j2.version>
+        <java.version>17</java.version>
+        <spring-boot.version>4.1.0</spring-boot.version>
+        <log4j2.version>2.22.1</log4j2.version>
+        <jackson.databind.version>2.22.2</jackson.databind.version>
     </properties>
     <groupId>gov.nih.ncats</groupId>
     <artifactId>gsrs-services-common</artifactId>
-    <version>1.0</version>
+    <version>1.2-SNAPSHOT</version>
     <name>gsrs-services-common</name>
     <description>Spring starter for common classes useful to services</description>
     <url>https://github.com/ncats/gsrs-services-common</url>
@@ -46,7 +47,7 @@
         </license>
     </licenses>
 
-   <repositories>
+    <repositories>
         <repository>
             <id>central-sonatype</id>
             <url>https://central.sonatype.com/repository/maven-snapshots/</url>
@@ -69,7 +70,7 @@
             </snapshots>
         </repository>
     </repositories>
-         
+
     <distributionManagement>
         <snapshotRepository>
             <id>central</id>
