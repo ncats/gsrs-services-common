@@ -16,7 +16,6 @@
         <java.version>17</java.version>
         <spring-boot.version>4.1.0</spring-boot.version>
         <log4j2.version>2.22.1</log4j2.version>
-        <jackson.databind.version>2.22.2</jackson.databind.version>
     </properties>
     <groupId>gov.nih.ncats</groupId>
     <artifactId>gsrs-services-common</artifactId>

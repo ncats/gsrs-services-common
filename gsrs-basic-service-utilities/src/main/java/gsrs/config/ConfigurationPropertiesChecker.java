@@ -1,6 +1,6 @@
 package gsrs.config;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
+import tools.jackson.core.JacksonException;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.env.ConfigurableEnvironment;
@@ -8,7 +8,7 @@ import org.springframework.core.env.MapPropertySource;
 import java.util.*;
 import pl.jalokim.propertiestojson.util.PropertiesToJsonConverter;
 import pl.jalokim.propertiestojson.util.PropertiesToJsonConverterBuilder;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.ObjectMapper;
 
 
 @Slf4j
@@ -60,7 +60,7 @@ public class ConfigurationPropertiesChecker {
             }
             try {
                 return prettifyJson(json);
-            } catch (JsonProcessingException jpe) {
+            } catch (JacksonException jpe) {
                 return "{ \"message\": \"Exception while prettifying JSON.\"}";
             }
         } else {
@@ -68,7 +68,7 @@ public class ConfigurationPropertiesChecker {
         }
     }
 
-    private String prettifyJson(String json) throws JsonProcessingException {
+    private String prettifyJson(String json) throws JacksonException {
         ObjectMapper mapper = new ObjectMapper();
         Object jsonObject = mapper.readValue(json, Object.class);
         String prettyJson = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonObject);

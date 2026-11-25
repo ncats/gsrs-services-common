@@ -15,7 +15,6 @@
         <java.version>17</java.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <jackson.databind.version>2.22.2</jackson.databind.version>
     </properties>
 
     <dependencies>
@@ -31,9 +30,8 @@
             <version>5.3.0</version>
         </dependency>
         <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
+            <groupId>tools.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>${jackson.databind.version}</version>
         </dependency>
         <dependency>
             <groupId>gov.nih.ncats</groupId>
